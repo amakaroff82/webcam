@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		#video {
+		  display: none;
+		}
+
+		#canvas {
+		  display: none;
+		}
+	</style>
+		
+	<script data-src="./app/shaders/vpreproc.glsl" type="x-shader/x-vertex"   data-name="preproc"></script>
+	<script data-src="./app/shaders/fpreproc.glsl" type="x-shader/x-fragment" data-name="preproc"></script>
+
+	
+	<video id="video" autoplay="autoplay"></video>
+	<canvas id="canvas"></canvas>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+	<script src="./app/jquery-3.2.1.min.js"></script>
+	<script src="./app/shaderLoader.js"></script>
+	<script src="./app/main.js"></script>
+	
+</html>
