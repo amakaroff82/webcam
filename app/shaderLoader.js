@@ -4,11 +4,15 @@ var shadersLoaderCount  = vertexShaders.length + fragmentShaders.length;
 
 var loaderColback = null;
 
-window.shadersHolder = { 
-	preproc:{
-		vertex: '', 
-		fragment: '' 
-	}
+window.shadersHolder = {
+    preproc:{
+        vertex: '',
+        fragment: ''
+    },
+    output:{
+        vertex: '',
+        fragment: ''
+    }
 };
 
 function loadShader(shader, type) {

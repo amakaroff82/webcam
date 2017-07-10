@@ -9,17 +9,23 @@
 		  display: none;
 		}
 	</style>
-		
+
 	<script data-src="./app/shaders/vpreproc.glsl" type="x-shader/x-vertex"   data-name="preproc"></script>
 	<script data-src="./app/shaders/fpreproc.glsl" type="x-shader/x-fragment" data-name="preproc"></script>
+	<script data-src="./app/shaders/voutput.glsl" type="x-shader/x-vertex"   data-name="output"></script>
+	<script data-src="./app/shaders/foutput.glsl" type="x-shader/x-fragment" data-name="output"></script>
 
-	
-	<video id="video" autoplay="autoplay"></video>
+
+	<video id="videoElement" autoplay="autoplay"></video>
 	<canvas id="canvas"></canvas>
-	
+
 	<script src="./app/three.min.js"></script>
 	<script src="./app/jquery-3.2.1.min.js"></script>
+	<script src="./app/tools.js"></script>
 	<script src="./app/shaderLoader.js"></script>
+	<script src="./app/videoCapture.js"></script>
+	<script src="./app/passes/preproc.js"></script>
+	<script src="./app/passes/output.js"></script>
 	<script src="./app/main.js"></script>
 	
 </html>
